@@ -1,0 +1,46 @@
+-- 1. Create the Database
+CREATE DATABASE IF NOT EXISTS WorkforceAnalyticsDB;
+USE WorkforceAnalyticsDB;
+
+-- 2. Create the Master HR Table
+CREATE TABLE IF NOT EXISTS hr_employee_data (
+    EmployeeNumber INT PRIMARY KEY,
+    Age INT,
+    Attrition VARCHAR(10),
+    BusinessTravel VARCHAR(50),
+    DailyRate INT,
+    Department VARCHAR(100),
+    DistanceFromHome INT,
+    Education INT,
+    EducationField VARCHAR(100),
+    EmployeeCount INT,
+    EnvironmentSatisfaction INT,
+    Gender VARCHAR(20),
+    HourlyRate INT,
+    JobInvolvement INT,
+    JobLevel INT,
+    JobRole VARCHAR(100),
+    JobSatisfaction INT,
+    MaritalStatus VARCHAR(50),
+    MonthlyIncome INT,
+    MonthlyRate INT,
+    NumCompaniesWorked INT,
+    Over18 VARCHAR(5),
+    OverTime VARCHAR(5),
+    PercentSalaryHike INT,
+    PerformanceRating INT,
+    RelationshipSatisfaction INT,
+    StandardHours INT,
+    StockOptionLevel INT,
+    TotalWorkingYears INT,
+    TrainingTimesLastYear INT,
+    WorkLifeBalance INT,
+    YearsAtCompany INT,
+    YearsInCurrentRole INT,
+    YearsSinceLastPromotion INT,
+    YearsWithCurrManager INT,
+    Age_Group VARCHAR(50),
+    Experience_Level VARCHAR(50),
+    Income_Category VARCHAR(50),
+    Tenure_Group VARCHAR(50)
+);
